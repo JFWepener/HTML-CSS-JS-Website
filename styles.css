@@ -1,0 +1,229 @@
+body {
+  background-color: #f1f1f1;
+}
+
+/* Home Page Styling */
+.home {
+  background-color: #e4dcdc;
+}
+
+.home {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  border: solid rgb(196, 193, 193) 5px;
+  border-radius: 5%;
+  padding: 5px;
+}
+
+.home h1 {
+  font-family: "josefin sans thin";
+  color: #a8a2ce;
+  text-align: center;
+}
+
+.home h2 {
+  color: #76ded7;
+  font-family: "Allura", cursive;
+}
+
+.home h3 {
+  color: #a8a2ce;
+  font-family: "arial", cursive;
+}
+
+.home p {
+  color: grey;
+  font-size: 25px;
+}
+
+/* Catalogue Page Styling */
+img {
+  height: auto;
+  width: 100px;
+  /* filter: grayscale(100%); */
+}
+
+.imgContainer {
+  margin: 2rem 0;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.2);
+  /* filter: invert(100%); */
+}
+
+.row {
+  padding: 5px;
+  border: 1px solid rgb(196, 193, 193);
+}
+
+/* Nav Styling */
+nav {
+  background-color: #9d8397;
+}
+
+/* Jumbotron Styling */
+h1.display-4 {
+  font-family: "josefin sans thin";
+  text-align: center;
+  color: #a8a2ce;
+}
+
+h2.lead {
+  font-family: "josefin sans thin";
+  font-size: 1.5rem;
+  text-align: center;
+  color: #a8a2ce;
+}
+
+/* About Us Page Styling */
+#aboutUs {
+  border: 5px solid grey;
+}
+
+#aboutUs p {
+  margin: 5px;
+  padding: 5px;
+}
+
+#aboutUs h1 {
+  font-family: "josefin sans thin";
+  text-align: center;
+  color: #a8a2ce;
+}
+
+/* Articles Styling */
+.article {
+  margin: 0 auto;
+  border: solid rgb(196, 193, 193) 5px;
+  border-radius: 5%;
+  padding: 5px;
+  background-color: #e4dcdc;
+}
+
+.article h1 {
+  font-family: "josefin sans thin";
+  color: #a8a2ce;
+  text-align: center;
+}
+
+.article h2 {
+  color: #76ded7;
+  font-family: "josefin sans thin";
+  text-align: center;
+}
+
+.article p {
+  color: grey;
+}
+
+/* Buttons Styling */
+form .btn {
+  color: white;
+  font-size: 20px;
+  background-color: #5fd7d9;
+  border: 1px solid #5fd7d9;
+  border-radius: 10%;
+}
+
+.orderButton {
+  color: white;
+  font-size: 20px;
+  background-color: #5fd7d9;
+  border: 1px solid #5fd7d9;
+  border-radius: 10%;
+}
+
+.add-to-cart {
+  background-color: #5fd7d9;
+  color: white;
+  margin: auto 0;
+}
+
+.addToCart {
+  align-self: auto;
+}
+
+small {
+  font-size: 0.8rem;
+}
+
+/* Container h4 styling */
+.container h4 {
+  color: #76ded7;
+  font-family: "arial", cursive;
+}
+
+/* Button hover styling */
+.btn:hover {
+  color: grey;
+  background-color: white;
+}
+
+/* a tag styling */
+a {
+  color: black;
+}
+
+/* Table styling */
+th {
+  width: 50%;
+  color: #76ded7;
+  font-family: "josefin sans thin";
+  text-align: left;
+  font-size: 2rem;
+}
+
+tr {
+  border: 1px solid rgb(196, 193, 193);
+}
+
+ul li {
+  list-style: none;
+}
+
+ul a {
+  font-size: 1rem;
+}
+
+td {
+  padding-left: 5px;
+}
+
+h5 {
+  font-family: "josefin sans thin";
+  color: #a8a2ce;
+}
+
+/* Reviews Styling */
+.reviews {
+  border: solid rgb(196, 193, 193) 5px;
+  border-radius: 5%;
+}
+
+.reviews h1 {
+  font-family: "josefin sans thin";
+  color: #a8a2ce;
+  text-align: center;
+}
+
+.reviews h3 {
+  color: #a8a2ce;
+  font-family: "arial", cursive;
+}
+
+.column {
+  background-color: #e4dcdc;
+  display: inline-block;
+  width: 31%;
+  margin: 1%;
+  padding: 5px;
+}
+
+.shoppingcart-items {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+}
+

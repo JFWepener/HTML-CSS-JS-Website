@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUs.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Catalogue.html">Products</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="ContactUs.html">Contact Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="AccountLogin.html">Account Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cart" href="shoppingCart.html"
+                ><ion-icon name="basket" size="large"></ion-icon>Cart<span
+                  id="cart-total"
+                  >0</span
+                ></a
+              >
+            </li>
+          </ul>
+          <!-- Form for search function -->
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-4">Moonstone Healing Therapies</h1>
+        <h2 class="lead">
+          Holistic approach to a healthier life!
+        </h2>
+      </div>
+
+      <!-- Shopping Cart -->
+      <button id="chain-btn">Click for chain event</button>
+      <div class="shoppingcart chain-event">
+        <h1>Shopping Cart</h1>
+        <div>
+          <ul id="show-cart"></ul>
+        </div>
+        <div>
+          <div>Discount Coupon: R<span id="discount-coupon">R0.00</span></div>
+          <div>Delivery Option: R<span id="delivery-option">R0.00</span></div>
+          <div>VAT: R<span id="vat-cart">R0.00</span></div>
+          <div>
+            Total Cart Incl VAT: R<span id="total-cart-vat">R0.00</span>
+          </div>
+        </div>
+        <form action="" id="coupons" onsubmit="return false;">
+          <div>
+            <!-- Discount Coupons -->
+            <h2>Discount Coupons and Delivery Options</h2>
+            <label class="radiolabel"
+              ><input
+                type="radio"
+                name="selectedcoupon"
+                value="coupon0"
+                onclick="displayCart()"
+              />R0.00 Discount Coupon</label
+            ><br />
+            <label class="radiolabel"
+              ><input
+                type="radio"
+                name="selectedcoupon"
+                value="coupon5"
+                onclick="displayCart()"
+              />R5.00 Discount Coupon</label
+            ><br />
+            <label class="radiolabel"
+              ><input
+                type="radio"
+                name="selectedcoupon"
+                value="coupon10"
+                onclick="displayCart()"
+              />R10.00 Discount Coupon</label
+            ><br />
+            <label class="radiolabel"
+              ><input
+                type="radio"
+                name="selectedcoupon"
+                value="coupon15"
+                onclick="displayCart()"
+              />R15.00 Discount Coupon</label
+            ><br />
+            <label class="radiolabel"
+              ><input
+                type="radio"
+                name="selectedcoupon"
+                value="coupon20"
+                onclick="displayCart()"
+              />R20.00 Discount Coupon</label
+            ><br />
+
+            <br />
+          </div>
+
+          <!-- Delivery Options -->
+          <div>
+            <h4>Delivery or Collection</h4>
+
+            <label class="radiolabel"
+              ><input
+                type="radio"
+                name="collection"
+                value="collection"
+                onclick="displayCart()"
+              />Self Collect</label
+            ><br />
+
+            <br />
+
+            <label id="deloptions">Delivery Options</label>
+
+            <select
+              id="deliveryoptions"
+              name="deliveryoptions"
+              onchange="displayCart()"
+            >
+              <option value="None">Select Delivery Option</option>
+              <option value="SameDay">Same Day(R100)</option>
+              <option value="NextDay">Next Day(R75)</option>
+              <option value="TwoDays">Two Days(R50)</option>
+              <option value="Economy">Economy(R25)</option>
+            </select>
+            <br />
+          </div>
+        </form>
+
+        <!-- Clear Cart Button -->
+        <div>
+          <button id="clear-cart">Clear Cart</button>
+          <button id="check-out">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="shoppingcart.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>
